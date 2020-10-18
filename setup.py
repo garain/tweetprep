@@ -1,17 +1,17 @@
 from setuptools import setup 
 
 # reading long description from file 
-with open('DESCRIPTION.txt') as file: 
+with open('tweetprep/DESCRIPTION.rst') as file: 
 	long_description = file.read() 
 
 
 # specify requirements of your package here 
-REQUIREMENTS = ['googletrans','re','string'] 
+REQUIREMENTS = ['googletrans'] 
 
 # some more details 
 CLASSIFIERS = [ 
-	'Development Status :: 1 - Beta', 
-	'Intended Audience :: Developers & Researchers', 
+	'Development Status :: 4 - Beta', 
+	'Intended Audience :: Developers', 
 	'Topic :: Internet', 
 	'License :: OSI Approved :: MIT License', 
 	'Programming Language :: Python', 
@@ -21,19 +21,20 @@ CLASSIFIERS = [
 	'Programming Language :: Python :: 3', 
 	'Programming Language :: Python :: 3.3', 
 	'Programming Language :: Python :: 3.4', 
-	'Programming Language :: Python :: 3.5', 
+	'Programming Language :: Python :: 3.5'
 	] 
 
 # calling the setup function 
 setup(name='tweetprep', 
-	version='1.0.0', 
+	version='2.0.5', 
 	description='A small preprocessor for tweets.', 
-	long_description=long_description, 
+	long_description=long_description,
 	url='https://github.com/garain/tweetprep', 
 	author='Avishek Garain', 
 	author_email='avishekgarain@gmail.com', 
 	license='MIT', 
-	packages=['tweetprep'], 
+	packages=['tweetprep'],
+	package_data={'tweetprep': ['DESCRIPTION.rst']},
 	classifiers=CLASSIFIERS, 
 	install_requires=REQUIREMENTS, 
 	keywords='tweet translate preprocess'
