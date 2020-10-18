@@ -1,3 +1,3 @@
 # tweetprep
 
-Tweet preprocessing library
+Tweet preprocessing library by Avishek Garain.
